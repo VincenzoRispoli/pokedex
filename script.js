@@ -17,10 +17,7 @@ let limitPokemon = 10;
 
 // inizializzation function
 async function init() {
-    startFrom = 0;
-    pokemon = [];
-    document.getElementById('pokedex').innerHTML = '';
-    // startLoadingCurtain()
+    startLoadingCurtain()
     await includeHTML();
     await takeAllPokemon();
     hideStartLoadingCurtain()
