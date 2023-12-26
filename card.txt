@@ -1,0 +1,17 @@
+<div id="pokedex-card" class="pokedex-card">
+        <span class="arrow-and-heart-icons-cont">
+            <img class="arrow" src="" alt="">
+            <img class="heart" src="" alt="">
+        </span>
+        <span class="name-and-id-cont">
+            <h2 id="poke-name" class="poke-name"></h2>
+            <span id="id" class="id"></span>
+        </span>
+        <div id="types-container" class="types-container"></div>
+        
+    </div>
+
+     <span class="arrow-and-heart-icons-cont">
+        <img class="heart" src="./icons/arrow-left-solid.svg" alt="">
+        <img class="arrow" src="./icons/heart-regular.svg" alt="">
+        </span>

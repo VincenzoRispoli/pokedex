@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/pokemon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="./functions/templates-functions.js"></script>
+    <script src="./functions/show-about-functions.js"></script>
+    <script src="./functions/basic-state-functions.js"></script>
+    <script src="./functions/evolutions-functions.js"></script>
+    <script src="./functions/move-functions.js"></script>
+    <title>Pokedex</title>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="templates/header.html"></div>
+    <div id="pokedex" class="pokedex">
+    </div>
+    <div class="load-more-pokemon-button-container">
+        <button onclick="loadMorePokemon(event)" id="load-more-poke-button" class="load-more-poke-button" href="">Load
+            More Pokémon</button>
+    </div>
+    <div onclick="hideDialogBg()" id="dialog-bg" class="dialog-bg d-none"></div>
+    </div>
+
+    <div id="evolutions-curtain" class="evolutions-curtain d-none">
+    </div>
+
+    <div id="loading-courtain-background" class="loading-courtain-background d-none">
+        <div class="opacity-container">
+            <div class="content-container">
+                <h2 class="loading-title">Herzlich Wilkommen in meinen</h2>
+                <img class="logo-load-curtain" src="./img/pokemon-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="loading-more-poke-courtain" class="loading-more-poke-courtain d-none">
+        <div class="opacity-container">
+            <div class="content-container">
+                <h2 class="loading-title">Mehr Pokémon wurden geladen</h2>
+                <span class="loading-subtitle">Noch ein bisschen geduld...</span>
+                <img class="pokeball-load-curtain" src="./img/pokeball.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+
+</html>
